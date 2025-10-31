@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Demo Website</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    header nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+      color: white;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      background-color: rgba(0,0,0,0.5);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 4rem 2rem;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      padding: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    @media(max-width: 768px) {
+      header { flex-direction: column; }
+      header nav { margin-top: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>My Website</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Welcome to My Website</h1>
+  </div>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a team of passionate professionals dedicated to delivering amazing digital experiences. Our focus is on innovation, quality, and customer satisfaction.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>Building responsive and modern websites tailored to your needs.</p>
+      </div>
+      <div class="service-card">
+        <h3>Design</h3>
+        <p>Creating visually appealing and user-friendly interfaces.</p>
+      </div>
+      <div class="service-card">
+        <h3>SEO & Marketing</h3>
+        <p>Optimizing your digital presence to reach more customers.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@mywebsite.com</p>
+    <p>Phone: +1 234 567 890</p>
+  </section>
+
+  <footer>
+    &copy; 2025 My Demo Website. All rights reserved.
+  </footer>
+
+</body>
+</html>
+
